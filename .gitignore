@@ -1,0 +1,5 @@
+bin/
+obj/
+.idea/
+BusinessLookup.Solution.sln
+global.json
