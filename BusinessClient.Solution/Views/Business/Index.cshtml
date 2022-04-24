@@ -1,0 +1,24 @@
+@model List<Business>;
+
+<h1>All Animals:</h1>
+
+<ol>
+	@foreach (Business business in Model)
+	{
+		<ul>
+			<li>ID: @business.Id</li>
+			<li>Name: @business.Name</li>
+			<li>Address: @business.Address</li>
+			<li>City: @business.City</li>
+			<li>State: @business.State</li>
+			<li>Zip: @business.Zip</li>
+			<li>Phone: @business.Phone</li>
+			<li>Email: @business.Email</li>
+			<li>Website: @business.Website</li>
+			<li>Category: @business.Category</li>
+			<li>Subcategory: @business.Subcategory</li>
+		</ul>
+		<a href="/Business/Details/@(business.Id)"><p>View Details</p></a>
+		<br>
+	}
+</ol>

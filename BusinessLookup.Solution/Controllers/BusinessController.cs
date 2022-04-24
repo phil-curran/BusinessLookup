@@ -64,9 +64,9 @@ namespace BusinessLookup.Controllers
         
         // GET: api/Businesses/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<IEnumerable<Business>>> Get(int id, string subcategory)
+        public async Task<ActionResult<IEnumerable<Business>>> Get(int id)
         {
-            var businesses = await _context.Businesses.Where(b => b.Subcategory == subcategory).ToListAsync();
+            var businesses = await _context.Businesses.Where(entry => entry.Id == id).ToListAsync();
 
             if (businesses == null)
             {
