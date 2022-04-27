@@ -44,10 +44,10 @@ You can enter business details like name, address, phone number, website address
 
 Endpoints are documented on the Swagger page and include:
 
-### GET: https://localhost:5001/api/Businesses
+### GET: /api/Businesses
 * GETs all of the businesses in the database
 
-### POST: https://localhost:5001/api/Businesses
+### POST: /api/Businesses
 * POSTs a new business entry to the database
 
 ### GET by Business Id: /api/Businesses/{id}
